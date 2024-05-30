@@ -13,7 +13,7 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 
 // mongo connection
-mongoose.connect("mongodb+srv://gurudeep2208:3HfJpBTAQ1Igfve3@cluster0.oolzi7g.mongodb.net/")
+mongoose.connect("mongoDB url")
 mongoose.connection
     .once("open", () => { console.log("Connected to DB....."); })
     .on("error", () => { console.log("problem to connect to DB ..!!!!!"); })
